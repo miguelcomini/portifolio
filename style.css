@@ -1,0 +1,168 @@
+:root {
+    --cor-primaria: #2c3e50;
+    --cor-secundaria: #3498db;
+    --cor-texto: #333;
+    --cor-fundo: #f9f9f9;
+    --cor-card: #fff;
+}
+
+.modo-escuro {
+    --cor-primaria: #3498db;
+    --cor-secundaria: #2c3e50;
+    --cor-texto: #f9f9f9;
+    --cor-fundo: #1a1a1a;
+    --cor-card: #2d2d2d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: var(--cor-primaria);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.botao-tema {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Partes */
+.parte {
+    padding: 8rem 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+/* Destaque */
+.destaque {
+    text-align: center;
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+}
+
+.destaque h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.destaque h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.destaque p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Botões */
+.botao {
+    background: var(--cor-secundaria);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: var(--cor-primaria);
+}
+
+/* Sobre */
+.sobre-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.texto {
+    flex: 2;
+}
+
+.texto p {
+    margin-bottom: 1.5rem;
+}
+
+.foto {
+    flex: 1;
+    text-align: center;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    background: var(--cor-secundaria);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.redes a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+
+.avatar-foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--cor-secundaria);
+}
